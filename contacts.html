@@ -6,63 +6,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Меню сайта-->
-    <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <!-- Основной контент-->
-    <h2>Contact Us</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, nisi!</p>
-    <img src="images/bike.jpg" alt="350px" title="350px">
-    <h4>Adress</h4>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-    <h4>Phone</h4>
-    <ul>
-        <li>+7(111)111-11-11</li>
-        <li>+7(222)222-22-22</li>
-    </ul>
-    <h4>Online service</h4>
-    <ul>
-        <li><a href="index.html">Сайт</a></li>
-        <li><a href="mailto:aaa@aaaa.aa">aaa@aaaa.aa</a></li>
-    </ul>
-    <h4>Send us message</h4>
-    <form>
-        Full name<br>
-        <input type="text" size="30" placeholder="Full name"><br>
-        E-mail<br>
-        <input type="email" placeholder="mail@mail.ru"></br>
-        Message<br>
-        <textarea cols="30" rows="5" placeholder="Message"></textarea></br>
-        <button type="submit">Submit</button>
-        <button type="reset">Delete</button>
-    </form>
-    <h4>Map</h4>
-    <div style="position:relative;overflow:hidden;">
-        <a href="https://yandex.ru/maps/org/winner/1660808694/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:0px;">Winner</a>
-        <a href="https://yandex.ru/maps/213/moscow/category/fitness_club/184107363/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;">Фитнес-клуб в Москве</a>
-        <a href="https://yandex.ru/maps/213/moscow/category/workout_center/41430094175/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:28px;">Спортивный, тренажёрный зал в Москве</a>
-        <iframe
-            src="https://yandex.ru/map-widget/v1/?from=tabbar&ll=37.723044%2C55.686311&mode=poi&poi%5Bpoint%5D=37.721522%2C55.686380&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1660808694&source=serp_navig&z=17.36"
-            width="350" height="350" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    <!-- Верхушка сайта-->
+    <div class="menu_other">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
     </div>
+    <!-- Основной контент-->
+    <div class="header_contacts">
+        <h2 class="heading-contacts">Contact Us</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, nisi!</p>
+    </div>
+    <div class="table_contacts">
+        <table>
+            <tr>
+                <td class="footer_td"><img src="images/bike.jpg" width="300"></td>
+                <td rowspan="4">
+                    <h4>Send us message</h4>
+                    <form>
+                        Full name<br>
+                        <input class="input_field" type="text" size="30" placeholder="Full name"><br>
+                        E-mail<br>
+                        <input class="input_field" type="email" placeholder="mail@mail.ru"></br>
+                        Message<br>
+                        <textarea class="input_field" cols="30" rows="5" placeholder="Message"></textarea></br>
+                        <button class="button_send" type="submit">Submit</button>
+                        <button type="reset">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer_td">
+                    <h4 class="heading_mini">Address</h4>
+                    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer_td">
+                    <h4 class="heading_mini">Phone</h4>
+                    <li>+7(111)111-11-11</li>
+                    <li>+7(222)222-22-22</li>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer_td">
+                    <h4 class="heading_mini">Online service</h4>
+                    <li><a href="index.html">Сайт</a></li>
+                    <li><a href="mailto:aaa@aaaa.aa">aaa@aaaa.aa</a></li>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="map">
+        <h4 class="heading_mini">Map</h4>
+        <div style="position:relative;overflow:hidden;">
+            <a href="https://yandex.ru/maps/org/winner/1660808694/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:0px;">Winner</a>
+            <a href="https://yandex.ru/maps/213/moscow/category/fitness_club/184107363/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:14px;">Фитнес-клуб в Москве</a>
+            <a href="https://yandex.ru/maps/213/moscow/category/workout_center/41430094175/?utm_medium=mapframe&utm_source=maps"
+                style="color:#eee;font-size:12px;position:absolute;top:28px;">Спортивный, тренажёрный зал в Москве</a>
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?from=tabbar&ll=37.723044%2C55.686311&mode=poi&poi%5Bpoint%5D=37.721522%2C55.686380&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1660808694&source=serp_navig&z=17.36"
+                width="860" height="350" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </div>
+
     <!-- Футер сайта-->
-    <h3>Lorem, ipsum dolor.</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, reprehenderit!</p>
-    <hr>
-    <ul>
-        <li>2437 Marshall Plains Deonteville, MS 95834-9118</li>
-        <li>+7(111)111-11-11</li>
-        <li><a href="mailto:aaa@aaaa.aa">aaa@aaaa.aa</a></li>
-    </ul>
-    <p>Все права защищены</p>
+    <div class="footer">
+        <div class="footer_one">
+            <div class="footer_cont">
+                <h3 class="heading">Lorem, ipsum dolor.</h3>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, facere quam
+                    similique sed
+                    assumenda
+                    tempore.</p>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="footer_two">
+            <table>
+                <tr>
+                    <td class="footer_td">
+                        <p class="text">A. 2437 Marshall Plains Deonteville, MS 95834-9118</p>
+                    </td>
+                    <td class="footer_td">
+                        <p class="text">T. +7(111)111-11-11</p>
+                    </td>
+                    <td class="footer_td">
+                        <p class="text">E. <a href="mailto:aaa@aaaa.aa">aaa@aaaa.aa</a></p>
+                    </td>
+                </tr>
+            </table>
+            <div class="rights">
+                <p class="text">Все права защищены</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -6,34 +6,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Меню сайта-->
-    <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <!-- Основной контент-->
-    <h1> Главная</h1>
-    <h1> Lorem, ipsum dolor.</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro non tempora id in, enim autem. </p>
-    <h3>Lorem, ipsum dolor.</h3>
-    <h4>Lorem ipsum dolor sit amet.</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, numquam saepe quisquam reprehenderit
-        quidem eaque?</p>
-    <h3>Lorem, ipsum dolor.</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, recusandae!</p>
+    <!-- Верхушка сайта-->
+    <div class="header">
+        <div class="background">
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header_content">
+                <h1 class="top__heading"> Lorem, ipsum dolor.</h1>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro non tempora id in, enim
+                    autem. </p>
+            </div>
+        </div>
+    </div>
+    <!-- Основной контент -->
+    <div class="main_content">
+        <h3 class="heading">Lorem, ipsum dolor.</h3>
+        <div class="table_content">
+            <table>
+                <tr>
+                    <td>
+                        <div class="table_col">
+                            <h4 class="heading_mini">Lorem ipsum dolor sit amet.</h4>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem,
+                                numquam saepe quisquam reprehenderit quidem eaque?</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table_col">
+                            <h4 class="heading_mini">Lorem ipsum dolor sit amet.</h4>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem,
+                                numquam saepe quisquam reprehenderit quidem eaque?</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table_col">
+                            <h4 class="heading_mini">Lorem ipsum dolor sit amet.</h4>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem,
+                                numquam saepe quisquam reprehenderit quidem eaque?</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="main_text">
+        <h3 class="heading">Lorem, ipsum dolor.</h3>
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi nihil repellat explicabo, sequi
+            possimus adipisci doloribus quae nobis, fugit repudiandae quos sapiente dolore corporis maiores magni in
+            incidunt
+            veritatis nesciunt.</p>
+    </div>
     <!-- Футер сайта-->
-    <h3>Lorem, ipsum dolor.</h3>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, culpa.</p>
-    <hr>
-    <ul>
-        <li>2437 Marshall Plains Deonteville, MS 95834-9118</li>
-        <li>+7(111)111-11-11</li>
-        <li><a href="mailto:aaa@aaaa.aa">aaa@aaaa.aa</a></li>
-    </ul>
-    <p>Все права защищены</p>
+    <div class="footer">
+        <div class="footer_one">
+            <div class="footer_cont">
+                <h3 class="heading">Lorem, ipsum dolor.</h3>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, facere quam
+                    similique sed assumenda tempore.</p>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="footer_two">
+            <table>
+                <tr>
+                    <td class="footer_td">
+                        <p class="text">A. 2437 Marshall Plains Deonteville, MS 95834-9118</p>
+                    </td>
+                    <td class="footer_td">
+                        <p class="text">T. +7(111)111-11-11</p>
+                    </td>
+                    <td class="footer_td">
+                        <p class="text">E. <a href="mailto:aaa@aaaa.aa">aaa@aaaa.aa</a></p>
+                    </td>
+                </tr>
+            </table>
+            <div class="rights">
+                <p class="text">Все права защищены</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
