@@ -19,69 +19,89 @@
     </div>
     <!-- Основной контент-->
     <div class="header_contacts">
-        <div class="container">
+        <div class="container header_contacts__box">
             <h2 class="heading-contacts">Contact Us</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, nisi!</p>
+            <p class="text text__header_contacts">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum sint
+                animi sequi, delectus
+                repudiandae dicta vero debitis aspernatur reiciendis architecto!</p>
         </div>
     </div>
-    <form action="#" class="container main">
+    <form action="#" class="contacts_main container_contacts">
         <div class="contacts-info">
-            <img src="images/bike.jpg" width="300">
-            <h4 class="heading_mini">Address</h4>
-            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-            <h4 class="heading_mini">Phone</h4>
+            <img src="images/contacts-info-img.svg" width="300">
+            <h4 class="contacts_heading_mini">ADDRESS</h4>
+            <p class="text text__contacts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, facere!
+            </p>
+            <h4 class="contacts_heading_mini">PHONE</h4>
             <ul>
-                <li>+7(111)111-11-11</li>
-                <li>+7(222)222-22-22</li>
+                <li class="text telephone_img">+7(111)111-11-11</li>
+                <li class="text telephone_img">+7(222)222-22-22</li>
             </ul>
-            <h4 class="heading_mini">Online service</h4>
+            <h4 class="contacts_heading_mini">ONLINE SERVICE</h4>
             <ul>
-                <li><a href="index.html">Сайт</a></li>
-                <li><a href="mailto:aaa@aaaa.aa">aaa@aaaa.aa</a></li>
+                <li class="text website_img">Сайт</li>
+                <li class="text email_img">aaa@aaaa.aa</li>
             </ul>
         </div>
-        <div class="form">
-            <h4 class="heading_mini">Send us message</h4>
-            Full name<br>
-            <input class="input_field" type="text" size="30" placeholder="Full name"><br>
-            E-mail<br>
-            <input class="input_field" type="email" placeholder="mail@mail.ru"></br>
-            Message<br>
-            <textarea class="input_field" cols="30" rows="5" placeholder="Message"></textarea></br>
-            <button class="button_send" type="submit">Submit</button>
-            <button class="button_send" type="reset">Delete</button>
-        </div>
+        <div class="contacts-info">
+            <div class="contact__info_form">
+                <h4 class="contacts_heading_mini">SEND US MESSAGE</h4>
+                <div class="contact__form-item">
+                    <label for="name">Full Name</label><br>
+                    <input id="name" class="input" type="text" placeholder="Full Name">
+                </div>
 
+                <div class="contact__form-item">
+                    <label for="email">Email</label><br>
+                    <input id="email" class="input" type="email" placeholder="mail@mail.ru">
+                </div>
+
+                <div class="contact__form-item">
+                    <label for="message">Message:</label><br>
+                    <textarea name="Message" class="input" id="message" cols="30" rows="5" placeholder="Your message">
+                </textarea>
+                </div>
+
+                <button type="submit" class="button_send">submit</button>
+            </div>
+        </div>
     </form>
-    <div class="container">
+    <div class="map container_contacts">
         <iframe
             src="https://yandex.ru/map-widget/v1/?from=tabbar&ll=37.723044%2C55.686311&mode=poi&poi%5Bpoint%5D=37.721522%2C55.686380&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1660808694&source=serp_navig&z=17.36"
-            width="100%" height="400" style="display: block;"></iframe>
+            width="100%" height="480" style="display: block;"></iframe>
     </div>
     <!-- Футер сайта-->
     <div class="footer">
         <div class="container">
-            <div class="footer_one">
-                <h3 class="heading footer__heading">Lorem, ipsum dolor.</h3>
-                <p class="text footer__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus,
-                    facere quam
-                    similique sed assumenda tempore.</p>
+            <div class="footer__top">
+                <div class="footer__text">
+                    <h3 class="heading footer__heading">Intersted to woek
+                        with our team?</h3>
+                    <p class="text text_footer">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Necessitatibus,
+                        facere quam
+                        similique sed assumenda tempore.</p>
+                </div>
+                <a href="#" class="footer__button">Let’s Talk</a>
             </div>
             <hr>
-            <div class="footer_two">
+        </div>
+        <div class="container">
+            <div class="footer_bottom">
                 <ul class="footer__info">
-                    <li>
-                        A. 2437 Marshall Plains Deonteville, MS 95834-9118
+                    <li class="footer__list">
+                        2437 Marshall Plains Deonteville, MS 95834-9118
                     </li>
-                    <li>
-                        T. +7(111)111-11-11
+                    <li class="footer__list">
+                        +7(111)111-11-11
                     </li>
-                    <li>
-                        E. <a href="mailto:aaa@aaaa.aa">aaa@aaaa.aa</a>
+                    <li class="footer__list">
+                        aaa@aaaa.aa
                     </li>
                 </ul>
                 <div class="footer__rights">
-                    <p class="text">Все права защищены</p>
+                    <p class="text footer__rights_text">2021 © Все права защищены.</p>
                 </div>
             </div>
         </div>
